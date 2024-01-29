@@ -4,17 +4,14 @@ import TodoListView from "./components/TodoListView.vue";
 </script>
 
 <template>
-  <html>
-  <head>Title</head>
-  <body>
-  <header><TodoApp></TodoApp></header>
-  <main><TodoListView></TodoListView></main>
-  </body>
-  </html>
+  <div class="wrap">
+    <header><TodoApp></TodoApp></header>
+    <main><TodoListView></TodoListView></main>
+  </div>
 </template>
 
 <style scoped>
-body {
+.wrap {
     font-size: 1rem;
     font-family:sans-serif;
     width: 800px;
@@ -42,7 +39,7 @@ main {
 
 
 @media screen and (max-width: 1000px){
-  body{
+  .wrap{
     grid-template:
     "header" 150px
     "main" 450px;
